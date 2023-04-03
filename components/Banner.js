@@ -34,7 +34,7 @@ const Banner = () => {
       >
         <h1
           style={roboto_Mono.style}
-          className="text-2xl font-semibold leading-none sm:text-5xl text-title h-[135px]"
+          className="text-2xl font-semibold leading-none sm:text-5xl text-title h-[60px] md:h-[135px]"
         >
           <span className="text-secondary">
             {" "}
@@ -112,13 +112,19 @@ const Banner = () => {
           }}
           className="flex items-center mb-4 text-small_text "
         >
-          <Link href="https://www.facebook.com/profile.php?id=100024239881205">
+            <Link
+            target="_blank"
+            href="https://www.facebook.com/tushar.imran.357"
+          >
             <BsFacebook className="w-8 mr-2" />
           </Link>
-          <Link href="https://www.linkedin.com/in/israt-jahan-462788222/">
+          <Link
+            target="_blank"
+            href="https://www.linkedin.com/in/tusar-imran-680149227/"
+          >
             <BsLinkedin className="w-8 mr-2" />
           </Link>
-          <Link href="https://github.com/israt-emu">
+          <Link target="_blank" href="https://github.com/tushar8640">
             <BsGithub className="w-8 mr-3" />
           </Link>
         </motion.div>
@@ -129,12 +135,14 @@ const Banner = () => {
             duration: 1,
             delay: 0.5,
           }} className="items-center flex-shrink-0 lg:flex">
-          <button className="px-4 py-2 rounded border-2 border-primary text-primary ">
-            Work
-          </button>
-          <button className="ml-3 px-4 py-2 rounded bg-primary border-2 border-primary text-white ">
-            Resume
-          </button>
+            <Link
+            target="_blank"
+            href="https://drive.google.com/file/d/1xuZ76ws-5brlsAQahSzAO17MTX8heJXz/view?usp=share_link"
+          >
+            <button className="ml-2 px-4 py-2 rounded bg-primary border-2 border-primary text-white ">
+              Resume
+            </button>
+          </Link>
         </motion.div>
       </motion.div>
       <motion.div

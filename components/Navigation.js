@@ -1,6 +1,7 @@
 import Image from "next/image";
 import logo from "../assets/images/Israt2.png";
 import {motion} from "framer-motion";
+import Link from "next/link";
 
 const Navigation = () => {
   const nav = {
@@ -88,7 +89,12 @@ const Navigation = () => {
         <div className="flex items-center">
           <div className="items-center flex-shrink-0 hidden lg:flex ml-3">
             <motion.button variants={nav} className="px-3 py-1 rounded border-2 border-primary text-primary font-medium">
-              Resume
+            <Link
+            target="_blank"
+            href="https://drive.google.com/file/d/1xuZ76ws-5brlsAQahSzAO17MTX8heJXz/view?usp=share_link"
+          >
+           Resume
+          </Link>
             </motion.button>
           </div>
         </div>
