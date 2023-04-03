@@ -10,14 +10,7 @@ const roboto_Mono = Roboto_Mono({ subsets: ["latin"] });
 
 console.log(roboto_Mono);
 const Banner = () => {
-  const banner = {
-    animate: {
-      transition: {
-        delayChildren: 0.4,
-        staggerChildren: 0.1,
-      },
-    },
-  };
+  
   return (
     <motion.div
       className="container flex flex-col-reverse justify-center md:p-6 mx-auto sm:py-4 lg:flex-row lg:justify-between lg:ml-8 items-center h-screen"
